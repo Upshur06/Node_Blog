@@ -24,7 +24,6 @@ header > * {
 }
 
 header::after {
-  content: "Holy Holy Holy";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -57,8 +56,7 @@ header::after {
 }
 
 .main {
-  height: 400px;
-  margin-top: 50px;
+  margin-top: 32px;
   display: flex;
   justify-content: center;
 }
@@ -69,26 +67,63 @@ header::after {
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
-  border: 1px solid;
-  background-color: #ebeef1;
 }
 
 .post {
   margin-top: 8px;
+  border: 1px solid #eaecee;
+  border-radius: 8px;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+}
+
+.post-image {
+  flex-basis: 40%;
+  background-image: url(https://images.unsplash.com/photo-1527427337751-fdca2f128ce5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvZGluZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+  background-size: cover;
+  background-position: center;
+}
+
+.post-content {
+  flex-basis: 60%;
+  padding: 24px;
+}
+
+.post-date {
+  font-size: 12px;
+  color: #adb5bd;
+  font-weight: 600;
+}
+
+.post-title {
+  margin-top: 16px;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.post-title h4 {
+  margin: 0;
+}
+
+.post-text {
+  margin-top: 6px;
+  color: #495057;
+  font-weight: 400;
+  line-height: 1.4;
+  overflow: hidden;
+  max-height: 65px;
 }
 
 #fist {
-  /* border: 1px solid; */
   width: 30px;
   height: 30px;
   background-image: url(https://img.pngio.com/black-power-fist-png-download-800800-free-transparent-fist-power-fist-png-900_800.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 45%;
-  /* margin-top: 120px; */
 }
-
-/* <src="https://img.pngio.com/black-power-fist-png-download-800800-free-transparent-fist-power-fist-png-900_800.jpg" height="30" width="30"> */
 
 footer {
   min-height: 100px;
