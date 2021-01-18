@@ -76,6 +76,14 @@ header::after {
   height: 200px;
   overflow: hidden;
   display: flex;
+  margin-top: 24px;
+}
+
+.post:hover {
+  box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.1);
+  transform: translate3d(0, -5px, 0);
+  transition: all 0.25s ease;
+  cursor: pointer;
 }
 
 .post-image {
@@ -114,6 +122,42 @@ header::after {
   line-height: 1.4;
   overflow: hidden;
   max-height: 65px;
+}
+
+.add-post {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url(https://i.pinimg.com/originals/01/b2/ec/01b2ec922d3088e2227c981a21908441.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 2px 5px 0 rgba(197, 143, 26, 0.46);
+  position: fixed;
+  bottom: 95px;
+  right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-button.new-post-button {
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 2rem 5rem 0 rgba(71, 151, 33, 0.46);
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7i7WN-H9qUkfpjedcpK6JcyWeVYRjszhetg&usqp=CAU);
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.nav-button.new-post-button:hover {
+  box-shadow: 0 2rem 5rem 0 rgba(88, 71, 22, 0.1);
+  transform: translate3d(0, -1px, 0);
+  transition: all 0.25s ease;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 #fist {
